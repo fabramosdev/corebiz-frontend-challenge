@@ -45,9 +45,9 @@ const Products:React.FC = () => {
               <span>{item.productName}</span>
               <span>{item.stars}</span>
               <span>{item.listPrice ? `de ${item.listPrice}` : ''}</span>
-              <span>{`por ${item.price}`}</span>
+              <span>{`por ${item.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`}</span>
               <span>
-                {item.installments.length > 0 ? `ou em ${item.installments[0].quantity} de ${item.installments[0].value}` : ''}
+                {item.installments.length > 0 ? `ou em ${item.installments[0].quantity}x de ${item.installments[0].value}` : ''}
               </span>
               <button type="button">COMPRAR</button>
             </div>
