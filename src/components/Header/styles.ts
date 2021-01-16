@@ -47,14 +47,22 @@ export const Container = styled.div`
         margin: 0 10px;
 
       }
-      span {
-        margin-left: 5px;
-        width: 30px;
+
+      .cart-amount {
+        position: relative;
+        width: 20px;
         height: 20px;
-        color: white;
         background: red;
         border-radius: 50%;
+        span {
+          color: white;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
       }
+      }
+
     }
   }
 `;

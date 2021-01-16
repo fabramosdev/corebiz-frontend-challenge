@@ -25,7 +25,9 @@ const Header: React.FC = () => (
         </div>
         <div className="cart">
           <img src={imgCart} alt="Carrinho de compras" />
-          <span>1</span>
+          <div className="cart-amount">
+            <span>1</span>
+          </div>
         </div>
       </div>
 
