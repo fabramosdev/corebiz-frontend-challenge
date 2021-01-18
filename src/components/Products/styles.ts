@@ -23,12 +23,9 @@ export const Container = styled.div`
   .product-item:hover {
     .info {
       background: yellow;
-
-      button {
-      display: block;
+        button {
+        display: block;
+      }
     }
-    }
-
-
   }
 `;
