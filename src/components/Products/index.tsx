@@ -37,14 +37,13 @@ const Products:React.FC = () => {
 
   return (
     <Container>
-      <h3>Mais Vendidos</h3>
 
       {listProducts.map((item) => (
         <>
           <div className="product-item">
             <img src={item.imageUrl} alt="Imagem" />
             <div className="info">
-              <span>{item.productName}</span>
+              <span className="info-product-name">{item.productName}</span>
               {/* Ternário horroroso -- Refazer essa lógica */}
               <div className={`rate-${item.stars}`}>
                 {item.stars === 1
@@ -99,19 +98,18 @@ const Products:React.FC = () => {
                           )
                           : ''}
               </div>
-              <span>{item.listPrice ? `de ${item.listPrice}` : ''}</span>
-              <span>
+              <span className="info-product-listprice">{item.listPrice ? `de ${item.listPrice}` : <br />}</span>
+              <span className="info-product-price">
                 <NumberFormat value={item.price} displayType="text" prefix="R$" />
               </span>
-              <span>
-                {item.installments.length > 0 ? `ou em ${item.installments[0].quantity}x de ${item.installments[0].value}` : ''}
+              <span className="info-product-installments">
+                {item.installments.length > 0 ? `ou em ${item.installments[0].quantity}x de ${item.installments[0].value}` : <br />}
               </span>
               <button type="button">COMPRAR</button>
             </div>
           </div>
         </>
       ))}
-
     </Container>
   );
 };
