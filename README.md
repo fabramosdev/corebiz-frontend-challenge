@@ -1,5 +1,5 @@
 <div align="center" id="top">
-  <img src="./.github/app.gif" alt="Corebiz Frontend Typescript" />
+  <img src=".github/gobeyond.jpg" alt="Corebiz Frontend Typescript" />
 
   &#xa0;
 
