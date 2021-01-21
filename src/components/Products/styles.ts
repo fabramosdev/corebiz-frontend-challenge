@@ -12,6 +12,7 @@ export const Container = styled.div`
     margin: 0 auto;
     height: 353px;
     color: #7A7A7A;
+    margin-bottom: 69px;
 
     .info{
       display: flex;

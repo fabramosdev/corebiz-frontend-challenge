@@ -44,8 +44,9 @@ const Products:React.FC = () => {
             <img src={item.imageUrl} alt="Imagem" />
             <div className="info">
               <span className="info-product-name">{item.productName}</span>
-              {/* Ternário horroroso -- Refazer essa lógica */}
+
               <div className={`rate-${item.stars}`}>
+
                 {item.stars === 1
                   ? (
                     <>
